@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+section {
+  height: 100vh;
+  background-color: cornflowerblue;
+  display: flex;
+
+  align-items: center;
+}
+/*ARTICLE*/
+article {
+  height: 220px;
+  padding: 10px;
+  display: flex;
+  transition: 500ms;
+}
+.leftSide {
+  background-color: yellow;
+  flex: 1;
+  border-radius: 0 300px 300px 0;
+  justify-content: flex-end;
+  margin-right: 25px;
+}
+.rightSide {
+  background-color: red;
+  flex: 1;
+  border-radius: 300px 0 0 300px;
+  margin-left: 25px;
+}
+/*CIRLCE*/
+.round {
+  background-color: snow;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 500ms;
+}
+/*CLASS FOR JS*/
+.flexThree{
+  flex: 3;
+}
