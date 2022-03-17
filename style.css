@@ -1,36 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
 }
-section {
+.swingingButton {
   height: 100vh;
-  background-color: cornflowerblue;
   display: flex;
-
   align-items: center;
 }
+h2 {
+  color: white;
+  font-size: 32px;
+  font-weight: 800;
+}
 /*ARTICLE*/
-article {
+.leftSide,
+.rightSide {
   height: 220px;
   padding: 10px;
   display: flex;
   transition: 500ms;
+  justify-content: space-between;
+  overflow: hidden;
+  position: relative;
 }
 .leftSide {
-  background-color: yellow;
   flex: 1;
   border-radius: 0 300px 300px 0;
-  justify-content: flex-end;
   margin-right: 25px;
+  background: center/cover url("./assets/img/bgManga.png");
 }
 .rightSide {
-  background-color: red;
   flex: 1;
   border-radius: 300px 0 0 300px;
   margin-left: 25px;
+  background: center/cover url("./assets/img/bgAnime.png");
 }
-/*CIRLCE*/
+/*WHITE CIRLCE*/
 .round {
   background-color: snow;
   height: 200px;
@@ -41,7 +51,11 @@ article {
   align-items: center;
   transition: 500ms;
 }
+/*TEXT & ICON*/
+.displayFuild {
+  z-index: 2;
+}
 /*CLASS FOR JS*/
-.flexThree{
+.flexThree {
   flex: 3;
 }
